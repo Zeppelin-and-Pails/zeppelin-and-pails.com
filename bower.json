@@ -1,0 +1,20 @@
+{
+  "name": "zeppelin-and-pails.com",
+  "version": "0.0.0",
+  "dependencies": {
+    "bootstrap-css": "~3.3.4",
+    "components-font-awesome": "~4.4.0",
+    "html5shiv": "~3.7.3",
+    "jquery": "~2.1.4",
+    "respond": "~1.4.2"
+  },
+  "devDependencies": {},
+  "appPath": "app",
+  "moduleName": "zeppelin-and-pails.com",
+  "exportsOverride": {
+     "font-awesome": {
+       "fonts": "fonts/*",
+       "css": "css/font-awesome.css"
+     }
+   }
+}

@@ -31,11 +31,12 @@ h6 {
     color: #f8f8f8;
     background: url(../images/intro-bg.jpg) no-repeat center center;
     background-size: cover;
+    height: 100%;
 }
 
 .intro-message {
     position: relative;
-    padding-top: 20%;
+    padding-top: 30%;
     padding-bottom: 20%;
 }
 
@@ -161,4 +162,31 @@ footer {
 
 p.copyright {
     margin: 15px 0 0;
+}
+
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+    font-weight: 100;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+div#typedmessages {
+    display: inline;
 }

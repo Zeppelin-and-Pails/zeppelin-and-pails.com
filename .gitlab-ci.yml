@@ -1,0 +1,23 @@
+NPM install:
+  script:
+  - npm install
+  tags:
+  except:
+  - tags
+Bower install:
+  script:
+  - bower install
+  tags:
+  except:
+  - tags
+Deploy to production:
+  script:
+  - grunt
+  - du -h ./dist
+  - ssh ZandP 'rm -rf /data/www/zandp/zeppelin-and-pails.com/htdocs/*'
+  - rsync -avz ./dist/* -e ssh ZandP:/data/www/zandp/zeppelin-and-pails.com/htdocs
+  tags:
+  except:
+  - tags
+
+
